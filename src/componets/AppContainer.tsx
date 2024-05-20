@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { GridViewOutlined, Storefront, } from "@mui/icons-material";
 import { AppBar, Box, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
