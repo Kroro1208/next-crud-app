@@ -21,3 +21,13 @@ npm i prisma
 npx prisma init --datasource-provider mysql
 ```
 
+## schema設定したら以下コマンド実行して、workbench等で確認する
+```
+npx prisma migrate dev --name add product
+```
+
+## MUIのインストール
+```
+npm i @mui/material @emotion/react @emotion/styled 
+npm i @mui/icons-material 
+```
