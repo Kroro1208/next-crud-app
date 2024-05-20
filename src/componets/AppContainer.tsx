@@ -25,7 +25,7 @@ export default function AppContainer({children}: {children: React.ReactNode}) {
 
     const drawer = (
         <>
-            <Toolbar>
+            <Toolbar sx={{ justifyContent: 'center'}}>
                 <Link href='/admin'>
                     <Storefront sx={{
                         fontSize: {xs: 35, sm: 45},
@@ -59,7 +59,7 @@ export default function AppContainer({children}: {children: React.ReactNode}) {
             <CssBaseline />
             {/* header */}
             <AppBar>
-                <Toolbar sx={{backgroundColr: '#ffffff'}}>
+                <Toolbar sx={{backgroundColor: '#ffffff'}}>
                     <IconButton sx={{mr: 2, display: {sm: 'none'}, color: 'black'}} onClick={handleDraweToggle}>
                         <MenuIcon />
                     </IconButton>
@@ -80,7 +80,7 @@ export default function AppContainer({children}: {children: React.ReactNode}) {
 
             {/* main */}
             <Box component="main"
-            sx={{ height: '100%', margin: '80px autp', padding: '2rem', color: 'rgb(75, 85, 99)'}}>
+            sx={{ height: '100%', margin: '80px auto', padding: '2rem', color: 'rgb(75, 85, 99)'}}>
                 <main>{children}</main>
             </Box>
         </Box>
