@@ -13,7 +13,6 @@ import {
 } from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import { useState } from 'react';
-import { setFips } from 'crypto';
 import Image from 'next/image';
 
 interface Product {
@@ -57,7 +56,7 @@ export default function ProductAddForm() {
 
   return (
     <>
-      <form>
+      <form action="/api/admin/product" method="POST" encType="multipart/form-data">
         <Box
           sx={{ borderBottom: '1px dashed #c8cdd3', pb: 1, display: 'flex' }}
         >
@@ -307,8 +306,8 @@ export default function ProductAddForm() {
               variant="contained"
               sx={{
                 height: '48px',
-                backgroundColor: 'hsla(185, 64%, 39%, 1.0)',
-                '&:hover': { backgroundColor: 'hsla(185, 64%, 29%, 1.0)' },
+                backgroundColor: 'slategray',
+                '&:hover': { backgroundColor: "#3d5afe" },
               }}
             >
               登録する
